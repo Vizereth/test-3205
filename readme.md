@@ -1,13 +1,17 @@
-## Запуск backend из папки backend: 
+## Установка 
 
 ```bash
 npm i
+```
+
+## Запуск backend из папки backend: 
+
+```bash
 npm run start 
 ```
 ## Запуск frontend из папки frontend:
 
 ```bash
-npm i
 npm run start
 ``` 
 
