@@ -1,0 +1,16 @@
+.userlist {
+  gap: 20px;
+
+  &__item {
+    gap: 5px;
+
+    p {
+      font-size: 14px;
+    }
+
+    span {
+      color: slateblue;
+      font-size: 16px;
+    }
+  }
+}

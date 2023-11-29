@@ -1,0 +1,93 @@
+$transition: all 100ms ease-out;
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+
+  &::placeholder {
+    color: rgba(white, 0.8);
+    font-family: inherit;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid cyan;
+  }
+}
+
+.container {
+  gap: 60px;
+  align-items: center;
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.loader {
+  align-self: center;
+  visibility: hidden;
+
+  &.visible {
+    visibility: visible;
+  }
+}
+
+.form {
+  width: 100%;
+  max-width: 300px;
+  gap: 10px;
+
+  &__container {
+    gap: 30px;
+  }
+
+  &__field {
+    gap: 10px;
+  }
+
+  &__label {
+    color: slateblue;
+    font-size: 17px;
+  }
+
+  &__input {
+    background-color: transparent;
+    color: inherit;
+    transition: $transition;
+    font-size: 15px;
+  }
+
+  &__error {
+    visibility: hidden;
+    font-size: 13px;
+    color: rgb(255, 72, 72);
+
+    &.visible {
+      visibility: visible;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+    background-color: transparent;
+    border: 1px solid white;
+
+    color: inherit;
+    font-family: inherit;
+
+    transition: $transition;
+
+    padding: 8px 22px;
+    margin-bottom: 20px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid cyan;
+      color: cyan;
+    }
+  }
+}
